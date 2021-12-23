@@ -6,7 +6,7 @@ List<(string, int)> Load(string inputPath)
     var list = new List<(string, int)>();
     using(var sr = new StreamReader(fs, Encoding.UTF8))
     {
-        string l;
+        string? l;
         while((l = sr.ReadLine()) != null)
         {
             var dir = l.Split(" ");

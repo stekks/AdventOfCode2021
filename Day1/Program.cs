@@ -6,7 +6,7 @@ List<int> Load(string inputPath)
     var list = new List<int>();
     using(var sr = new StreamReader(fs, Encoding.UTF8))
     {
-        string l;
+        string? l;
         while((l = sr.ReadLine()) != null)
         {
             int.TryParse(l, out var i);
